@@ -1,7 +1,7 @@
 import {useEffect, useReducer} from "react";
 
 const initialState = {
-    isLoading: false,
+    isLoading: true,
     error: null,
     data: null
 }
@@ -21,9 +21,10 @@ const reducer = (state: LoadingState, action: any) => {
                 ...state,
                 isLoading: true,
             }
-        case 'articlesLoaded':
+        case 'getArticlesSuccess':
             return {
                 ...state,
+                isLoading: false,
                 data: action.payload,
             }
         default: {
@@ -38,7 +39,7 @@ const UseReducerHook = () => {
 
     useEffect(() => {
         dispatch({type: 'getArticlesStart'})
-        fetch("http://localhost:3004/articles").then(response => response.json()).then(articles => dispatch({type: 'articlesLoaded', payload: articles}))
+        fetch("http://localhost:3004/articles").then(response => response.json()).then(articles => dispatch({type: 'getArticlesSuccess', payload: articles}))
     }, [])
 
     return <div>
