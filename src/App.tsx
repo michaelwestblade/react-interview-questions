@@ -14,6 +14,7 @@ import UseRefHook from "./components/useRefHook";
 import UseMemoHook from "./components/useMemoHook";
 import UseCallbackHook from "./components/useCallbackHook";
 import UseCustomHook from "./components/useCustomHook";
+import UseCustomHook2 from "./components/useCustomHook2";
 
 function App() {
   // @ts-ignore
@@ -46,6 +47,7 @@ function App() {
         <UseMemoHook></UseMemoHook>
         <UseCallbackHook></UseCallbackHook>
         <UseCustomHook></UseCustomHook>
+      <UseCustomHook2></UseCustomHook2>
     </div>
   );
 }
