@@ -1,6 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import KeyIndexMap from "./components/keyIndexMap";
+import ReactFragment from "./components/reactFragment";
+import StyledComponent from "./components/styled/styledComponent";
+import ParentChildCommunication from "./components/parentChildCommunication";
+import UseStateHook from "./components/useStateHook";
+import UseEffectHook from "./components/useEffectHook";
+import UseReducerHook from "./components/useReducerHook";
 
 function App() {
   return (
@@ -19,6 +26,13 @@ function App() {
           Learn React
         </a>
       </header>
+        <KeyIndexMap></KeyIndexMap>
+        <ReactFragment shortVersion={true}></ReactFragment>
+        <StyledComponent bold={true}></StyledComponent>
+        <ParentChildCommunication></ParentChildCommunication>
+        <UseStateHook></UseStateHook>
+        <UseEffectHook></UseEffectHook>
+      <UseReducerHook></UseReducerHook>
     </div>
   );
 }

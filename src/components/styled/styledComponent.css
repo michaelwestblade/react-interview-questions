@@ -1,0 +1,7 @@
+.styled-component {
+    background: green;
+}
+
+.styled-component .conditional {
+    font-weight: bold;
+}

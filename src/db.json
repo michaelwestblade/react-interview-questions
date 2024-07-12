@@ -1,0 +1,27 @@
+{"articles": [
+  {
+    "id": 1,
+    "slug": "/posts/some-title",
+    "title": "This is some title"
+  },
+  {
+    "id": 2,
+    "slug": "/posts/some-other-title",
+    "title": "This is some other title"
+  },
+  {
+    "id": 3,
+    "slug": "/posts/another-title",
+    "title": "This is another title"
+  },
+  {
+    "id": 4,
+    "slug": "/posts/yet-another-title",
+    "title": "This is ye another title"
+  },
+  {
+    "id": 5,
+    "slug": "/posts/the-last-title",
+    "title": "This is the last title"
+  }
+]}
