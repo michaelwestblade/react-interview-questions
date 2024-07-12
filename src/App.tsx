@@ -11,6 +11,7 @@ import UseReducerHook from "./components/useReducerHook";
 import UseContextHook from "./components/useContextHook";
 import {ThemeContext} from "./theme";
 import UseRefHook from "./components/useRefHook";
+import UseMemoHook from "./components/useMemoHook";
 
 function App() {
   // @ts-ignore
@@ -40,6 +41,7 @@ function App() {
       <UseReducerHook></UseReducerHook>
       <UseContextHook></UseContextHook>
       <UseRefHook></UseRefHook>
+        <UseMemoHook></UseMemoHook>
     </div>
   );
 }
