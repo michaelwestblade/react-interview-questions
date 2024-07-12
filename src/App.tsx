@@ -12,6 +12,7 @@ import UseContextHook from "./components/useContextHook";
 import {ThemeContext} from "./theme";
 import UseRefHook from "./components/useRefHook";
 import UseMemoHook from "./components/useMemoHook";
+import UseCallbackHook from "./components/useCallbackHook";
 
 function App() {
   // @ts-ignore
@@ -42,6 +43,7 @@ function App() {
       <UseContextHook></UseContextHook>
       <UseRefHook></UseRefHook>
         <UseMemoHook></UseMemoHook>
+        <UseCallbackHook></UseCallbackHook>
     </div>
   );
 }
