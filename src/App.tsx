@@ -21,6 +21,7 @@ import {Dashboard} from "./components/dashboard";
 import {Layout} from "./components/layout";
 import {Article} from "./components/article";
 import {Auth} from "./components/auth";
+import {ReactPortals} from "./components/react-portals";
 
 function App() {
   // @ts-ignore
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/use-custom-hook" element={<div><UseCustomHook></UseCustomHook><UseCustomHook2></UseCustomHook2></div>}/>
                 <Route path="/react-memo" element={<ReactMemo></ReactMemo>}/>
                 <Route path="/articles/:slug" element={<Article/>}/>
+                <Route path="/react-portals" element={<ReactPortals/>}/>
                 <Route path="/private" element={<Auth><div><p>PRIVATE</p></div></Auth>}/>
             </Route>
             <Route path="*" element={<div>404</div>}/>
