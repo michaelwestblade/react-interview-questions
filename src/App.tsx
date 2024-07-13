@@ -18,6 +18,7 @@ import UseCustomHook2 from "./components/useCustomHook2";
 import ReactMemo from "./components/reactMemo";
 import {Route, Routes} from "react-router-dom";
 import {Dashboard} from "./components/dashboard";
+import {Layout} from "./components/layout";
 
 function App() {
   // @ts-ignore
@@ -25,20 +26,22 @@ function App() {
   return (
     <div className="App" style={theme}>
         <Routes>
-            <Route path="/" element={<Dashboard></Dashboard>} />
-            <Route path="key-index-map" element={<KeyIndexMap></KeyIndexMap>}/>
-            <Route path="fragment" element={<ReactFragment shortVersion={true}></ReactFragment>}/>
-            <Route path="/styled-component" element={<StyledComponent bold={true}></StyledComponent>}/>
-            <Route path="parent-child-communication" element={<ParentChildCommunication></ParentChildCommunication>}/>
-            <Route path="use-state-hook" element={<UseStateHook></UseStateHook>}/>
-            <Route path="use-effect-hook" element={<UseEffectHook></UseEffectHook>}/>
-            <Route path="use-reducer-hook" element={<UseReducerHook></UseReducerHook>}/>
-            <Route path="use-context-hook" element={<UseContextHook></UseContextHook>}/>
-            <Route path="use-ref-hook" element={<UseRefHook></UseRefHook>}/>
-            <Route path="use-memo-hook" element={<UseMemoHook></UseMemoHook>}/>
-            <Route path="use-callback-hook" element={<UseCallbackHook></UseCallbackHook>}/>
-            <Route path="use-custom-hook" element={<div><UseCustomHook></UseCustomHook><UseCustomHook2></UseCustomHook2></div>}/>
-            <Route path="react-memo" element={<ReactMemo></ReactMemo>}/>
+            <Route path="/" element={<Layout></Layout>}>
+                <Route index element={<Dashboard></Dashboard>} />
+                <Route path="/key-index-map" element={<KeyIndexMap></KeyIndexMap>}/>
+                <Route path="/fragment" element={<ReactFragment shortVersion={true}></ReactFragment>}/>
+                <Route path="/styled-component" element={<StyledComponent bold={true}></StyledComponent>}/>
+                <Route path="/parent-child-communication" element={<ParentChildCommunication></ParentChildCommunication>}/>
+                <Route path="/use-state-hook" element={<UseStateHook></UseStateHook>}/>
+                <Route path="/use-effect-hook" element={<UseEffectHook></UseEffectHook>}/>
+                <Route path="/use-reducer-hook" element={<UseReducerHook></UseReducerHook>}/>
+                <Route path="/use-context-hook" element={<UseContextHook></UseContextHook>}/>
+                <Route path="/use-ref-hook" element={<UseRefHook></UseRefHook>}/>
+                <Route path="/use-memo-hook" element={<UseMemoHook></UseMemoHook>}/>
+                <Route path="/use-callback-hook" element={<UseCallbackHook></UseCallbackHook>}/>
+                <Route path="/use-custom-hook" element={<div><UseCustomHook></UseCustomHook><UseCustomHook2></UseCustomHook2></div>}/>
+                <Route path="/react-memo" element={<ReactMemo></ReactMemo>}/>
+            </Route>
         </Routes>
     </div>
   );
