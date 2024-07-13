@@ -16,7 +16,9 @@ export const Layout = () => {
         "/use-callback-hook",
         "/use-custom-hook",
         "/react-memo",
-        "/react-portals"
+        "/react-portals",
+        "/react-suspense",
+        "higher-order"
     ]
     return <div>
         <header>

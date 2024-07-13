@@ -22,11 +22,13 @@ import {Layout} from "./components/layout";
 import {Article} from "./components/article";
 import {Auth} from "./components/auth";
 import {ReactPortals} from "./components/react-portals";
+import {ReactSuspense} from "./components/react-suspense";
+import HighOrderComponents from "./components/high-order-components";
 
 function App() {
   // @ts-ignore
   const [theme] = useContext(ThemeContext);
-  return (
+    return (
     <div className="App" style={theme}>
         <Routes>
             <Route path="/" element={<Layout></Layout>}>
@@ -46,6 +48,9 @@ function App() {
                 <Route path="/react-memo" element={<ReactMemo></ReactMemo>}/>
                 <Route path="/articles/:slug" element={<Article/>}/>
                 <Route path="/react-portals" element={<ReactPortals/>}/>
+                <Route path="/react-suspense" element={<ReactSuspense/>}/>
+                // @ts-ignore
+                <Route path="/higher-order" element={<HighOrderComponents/>}/>
                 <Route path="/private" element={<Auth><div><p>PRIVATE</p></div></Auth>}/>
             </Route>
             <Route path="*" element={<div>404</div>}/>
