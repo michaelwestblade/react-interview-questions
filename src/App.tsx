@@ -42,6 +42,7 @@ function App() {
                 <Route path="/use-custom-hook" element={<div><UseCustomHook></UseCustomHook><UseCustomHook2></UseCustomHook2></div>}/>
                 <Route path="/react-memo" element={<ReactMemo></ReactMemo>}/>
             </Route>
+            <Route path="*" element={<div>404</div>}/>
         </Routes>
     </div>
   );
