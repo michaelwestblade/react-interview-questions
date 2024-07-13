@@ -15,6 +15,7 @@ import UseMemoHook from "./components/useMemoHook";
 import UseCallbackHook from "./components/useCallbackHook";
 import UseCustomHook from "./components/useCustomHook";
 import UseCustomHook2 from "./components/useCustomHook2";
+import ReactMemo from "./components/reactMemo";
 
 function App() {
   // @ts-ignore
@@ -48,6 +49,7 @@ function App() {
         <UseCallbackHook></UseCallbackHook>
         <UseCustomHook></UseCustomHook>
       <UseCustomHook2></UseCustomHook2>
+        <ReactMemo></ReactMemo>
     </div>
   );
 }
