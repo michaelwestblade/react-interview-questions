@@ -18,7 +18,9 @@ export const Layout = () => {
         "/react-memo",
         "/react-portals",
         "/react-suspense",
-        "higher-order"
+        "/higher-order",
+        "/forms",
+        "/react-query"
     ]
     return <div>
         <header>

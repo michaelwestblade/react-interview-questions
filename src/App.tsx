@@ -24,6 +24,8 @@ import {Auth} from "./components/auth";
 import {ReactPortals} from "./components/react-portals";
 import {ReactSuspense} from "./components/react-suspense";
 import HighOrderComponents from "./components/high-order-components";
+import {Forms} from "./components/forms";
+import {ReactQuery} from "./components/react-query";
 
 function App() {
   // @ts-ignore
@@ -51,6 +53,8 @@ function App() {
                 <Route path="/react-suspense" element={<ReactSuspense/>}/>
                 // @ts-ignore
                 <Route path="/higher-order" element={<HighOrderComponents/>}/>
+                <Route path="/forms" element={<Forms/>}/>
+                <Route path="/react-query" element={<ReactQuery/>}/>
                 <Route path="/private" element={<Auth><div><p>PRIVATE</p></div></Auth>}/>
             </Route>
             <Route path="*" element={<div>404</div>}/>
