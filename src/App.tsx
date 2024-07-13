@@ -19,6 +19,8 @@ import ReactMemo from "./components/reactMemo";
 import {Route, Routes} from "react-router-dom";
 import {Dashboard} from "./components/dashboard";
 import {Layout} from "./components/layout";
+import {Article} from "./components/article";
+import {Auth} from "./components/auth";
 
 function App() {
   // @ts-ignore
@@ -41,6 +43,8 @@ function App() {
                 <Route path="/use-callback-hook" element={<UseCallbackHook></UseCallbackHook>}/>
                 <Route path="/use-custom-hook" element={<div><UseCustomHook></UseCustomHook><UseCustomHook2></UseCustomHook2></div>}/>
                 <Route path="/react-memo" element={<ReactMemo></ReactMemo>}/>
+                <Route path="/articles/:slug" element={<Article/>}/>
+                <Route path="/private" element={<Auth><div><p>PRIVATE</p></div></Auth>}/>
             </Route>
             <Route path="*" element={<div>404</div>}/>
         </Routes>
