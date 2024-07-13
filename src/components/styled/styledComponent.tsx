@@ -5,6 +5,8 @@ const StyledComponent = ({bold = false}) => {
         marginTop: '20px'
     }
     return <div className="styled-component">
+        <hr/>
+        <h1>Styled Component</h1>
         <p className={`${bold ? 'conditional' : ''}`}>Hello</p>
         <p style={appStyles}>Goodbye</p>
     </div>
